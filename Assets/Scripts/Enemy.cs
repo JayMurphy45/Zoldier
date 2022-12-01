@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
@@ -14,6 +15,7 @@ public class Enemy : MonoBehaviour
     public Transform target;
     public float speed;
     public float withinRange;
+
 
 
     public GameObject player;
@@ -46,6 +48,7 @@ public class Enemy : MonoBehaviour
         Destroy(this.gameObject);
 
         player.GetComponent<PlayerController>().points += pointsToGive;
+
     }
 
 }
